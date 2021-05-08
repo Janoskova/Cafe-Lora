@@ -240,6 +240,7 @@ nav a:hover {
   min-height: 100vh;
 
   color: white;
+  text-align: center;
   background-image: url('./img/gallery.jpg');
   background-size: cover;
   background-position: top center;
