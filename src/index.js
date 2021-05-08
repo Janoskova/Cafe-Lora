@@ -21,22 +21,22 @@ for (let i = 0; i < polozkaNavigace.length; i++) {
 }
 
 //4
-let ordered = false;
+// let ordered = false;
 
-const changeButton = () => {
-  if (ordered === false) {
-    orderBtn.textContent = 'Zrušit';
-    drinkCupElm.classList.add('drink__cup--selected');
-    ordered = true;
-  } else if (ordered === true) {
-    orderBtn.textContent = 'Objednat';
-    drinkCupElm.classList.remove('drink__cup--selected');
-    ordered = false;
-  }
-};
+// const changeButton = () => {
+//   if (ordered === false) {
+//     orderBtn.textContent = 'Zrušit';
+//     drinkCupElm.classList.add('drink__cup--selected');
+//     ordered = true;
+//   } else if (ordered === true) {
+//     orderBtn.textContent = 'Objednat';
+//     drinkCupElm.classList.remove('drink__cup--selected');
+//     ordered = false;
+//   }
+// };
 
-const orderBtn = document.querySelector('.order-btn');
-const drinkCupElm = document.querySelector('.drink__cup');
+// const orderBtn = document.querySelector('.order-btn');
+// const drinkCupElm = document.querySelector('.drink__cup');
 // orderBtn.addEventListener('click', changeButton);
 
 //5
