@@ -1,19 +1,19 @@
 import './style.css';
 
-const ingredience = {
-  color: '#feeeca',
-  label: 'mléčná pěna',
-};
+// const ingredience = {
+//   color: '#feeeca',
+//   label: 'mléčná pěna',
+// };
 
-const ingredience2 = {
-  color: '#fed7b0"',
-  label: 'teplé mléko',
-};
+// const ingredience2 = {
+//   color: '#fed7b0"',
+//   label: 'teplé mléko',
+// };
 
-const ingredience3 = {
-  color: '#613916',
-  label: 'espresso',
-};
+// const ingredience3 = {
+//   color: '#613916',
+//   label: 'espresso',
+// };
 
 export const Layer = ({ color, label }) => {
   return `
@@ -27,7 +27,6 @@ export const Layer = ({ color, label }) => {
 `;
 };
 
-const drinkInfoElm = document.querySelector('.drink__info');
-drinkInfoElm.innerHTML += Layer(ingredience);
-drinkInfoElm.innerHTML += Layer(ingredience2);
-drinkInfoElm.innerHTML += Layer(ingredience3);
+// drinkInfoElm.innerHTML += Layer(ingredience);
+// drinkInfoElm.innerHTML += Layer(ingredience2);
+// drinkInfoElm.innerHTML += Layer(ingredience3);

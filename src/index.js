@@ -69,3 +69,24 @@ orderBtn.addEventListener('click', changeButton);
 // drinkInfoElm.innerHTML += Layer(ingredience);
 // drinkInfoElm.innerHTML += Layer(ingredience2);
 // drinkInfoElm.innerHTML += Layer(ingredience3);
+
+//6
+const layers = [
+  {
+    color: '#feeeca',
+    label: 'mléčná pěna',
+  },
+  {
+    color: '#fed7b0',
+    label: 'teplé mléko',
+  },
+  {
+    color: '#613916',
+    label: 'espresso',
+  },
+];
+
+for (let i = 0; i < layers.length; i++) {
+  const drinkInfoElm = document.querySelector('.drink__info');
+  drinkInfoElm.innerHTML += Layer(layers[i]);
+}
