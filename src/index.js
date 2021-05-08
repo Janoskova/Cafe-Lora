@@ -2,6 +2,8 @@ import './style.css';
 
 import { Layer } from './Layer/index';
 
+import { Drink } from './Drink/index';
+
 console.log('funguju!');
 
 //3
@@ -35,7 +37,7 @@ const changeButton = () => {
 
 const orderBtn = document.querySelector('.order-btn');
 const drinkCupElm = document.querySelector('.drink__cup');
-orderBtn.addEventListener('click', changeButton);
+// orderBtn.addEventListener('click', changeButton);
 
 //5
 // const ingredience = {
@@ -71,22 +73,42 @@ orderBtn.addEventListener('click', changeButton);
 // drinkInfoElm.innerHTML += Layer(ingredience3);
 
 //6
-const layers = [
-  {
-    color: '#feeeca',
-    label: 'mléčná pěna',
-  },
-  {
-    color: '#fed7b0',
-    label: 'teplé mléko',
-  },
-  {
-    color: '#613916',
-    label: 'espresso',
-  },
-];
+// const layers = [
+//   {
+//     color: '#feeeca',
+//     label: 'mléčná pěna',
+//   },
+//   {
+//     color: '#fed7b0',
+//     label: 'teplé mléko',
+//   },
+//   {
+//     color: '#613916',
+//     label: 'espresso',
+//   },
+// ];
 
-for (let i = 0; i < layers.length; i++) {
-  const drinkInfoElm = document.querySelector('.drink__info');
-  drinkInfoElm.innerHTML += Layer(layers[i]);
-}
+// for (let i = 0; i < layers.length; i++) {
+//   const drinkInfoElm = document.querySelector('.drink__info');
+//   drinkInfoElm.innerHTML += Layer(layers[i]);
+// }
+
+//7
+const kava = {
+  id: 'romano',
+  name: 'Romano',
+  ordered: false,
+  layers: [
+    {
+      color: '#fbdf5b',
+      label: 'citrón',
+    },
+    {
+      color: '#613916',
+      label: 'espresso',
+    },
+  ],
+};
+
+const drinkListElm = document.querySelector('.drinks-list');
+drinkListElm.appendChild(Drink(kava));
