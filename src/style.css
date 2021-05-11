@@ -245,11 +245,19 @@ nav a:hover {
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery > p {
+  max-width: 50%;
+  background-color: rgba(0, 0, 0, 0.425);
+  margin: 0;
+  padding: 20px 20px;
 }
 
 .contacts {
   margin-bottom: 4rem;
-
   text-align: center;
 }
 
