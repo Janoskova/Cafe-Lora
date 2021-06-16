@@ -142,11 +142,11 @@ nav a:hover {
 
 .drinks-list {
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   justify-content: center;
-
   margin-bottom: 4rem;
 }
+
 /* 
 .drink {
   display: flex;
